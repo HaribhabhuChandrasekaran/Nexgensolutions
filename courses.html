@@ -1,0 +1,135 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  font-size: 28px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: red;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="images/elon musk1.jpeg" style="width:1500px;height:300px;align:right;"/>
+  <style>
+        #clock {
+            font-size: 25px;
+            text-align:center;
+        }
+    </style>
+	<div id="clock">8:10:45</div>
+    <script>
+        setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            am_pm = "AM";
+  
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+  
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+  
+            let currentTime = hour + ":" 
+                + min + ":" + sec + am_pm;
+  
+            document.getElementById("clock")
+                .innerHTML = currentTime;
+        }
+  
+        showTime();
+    </script>
+</div>
+
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a class="active" href="courses.html">Courses</a></li>
+  <li><a href="payment.html">Payment</a></li>
+  <li><a href="https://g.page/nexgen-solutions-gandhi-puram?share">Map</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<b>
+<h1><p STYLE="color:red; font-size:35px; text-align:center; font-family:Times new roman"> Courses trained: Duration 40 Hrs</p></h2>
+<p STYLE="color:red; font-size:20px; text-align:left; font-family:Times new roman">Course Value:  4500/- per student</p>
+<p style ="color:blue;font-size:20px">
+- Full stack python with django<br>
+- Full stack Java with Angular or React<br>
+- Full stack C# MVC, WPF, WCF, ADO.NET<br>
+- Amazon Web Services<br>
+- Azure Solution Architect<br>
+<p STYLE="color:red; font-size:20px; text-align:left; font-family:Times new roman">NGS Teaching Pedagogy/ NGS Deliverables</p>
+<p style ="color:black;font-size:20px">
+-	NGS certified Trainers would be provided by NGS for the programs decided as a part of this alliance.<br>
+
+-	NGS in its quest to make the courses relevant to the industry follows a pedagogy that includes</p>
+      <p style ="color:blue;font-size:20px">Continuous assessment<br>
+       *	Case Studies<br>
+       *	Quizzes & assignments<br>
+       *	Project Work<br>
+       *	Online/ Offline Tests & Evaluation<br>
+       *	Certification</p>
+<p style ="color:black;font-size:20px">
+-	Periodic monitoring of training progress/ attendance.<br>
+-	Periodic feedback to the college management by trainers/ by NGS Regional Academic team.<br>
+</p></b>
+<img src="images/image1.jpg" style="width:940px;height:1100px;align:right;"/><br>
+<br>
+<br>
+<img src="images/image2.jpg" style="width:940px;height:1100px;align:right;"/><br>
+<br>
+<br>
+<img src="images/net 1.jpg" style="width:940px;height:720px;align:right;"/><br>
+<br>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  font-size: 28px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: red;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="images/elon musk1.jpeg" style="width:1500px;height:300px;align:right;"/>
+  <style>
+        #clock {
+            font-size: 25px;
+            text-align:center;
+        }
+    </style>
+	<div id="clock">8:10:45</div>
+    <script>
+        setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            am_pm = "AM";
+  
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+  
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+  
+            let currentTime = hour + ":" 
+                + min + ":" + sec + am_pm;
+  
+            document.getElementById("clock")
+                .innerHTML = currentTime;
+        }
+  
+        showTime();
+    </script>
+</div>
+
+</style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="courses.html">Courses</a></li>
+  <li><a href="payment.html">Payment</a></li>
+  <li><a href="https://g.page/nexgen-solutions-gandhi-puram?share">Map</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+
+
+<h1><p style= "text-align:center; color:blue;font-size:45px"> NEXGEN SOLUTIONS COIMBATORE </h1></p>
+
+<h2> <p style= "color:black;font-size:20px;text-align:justify;" > Greetings from NGS!!
+NEXGEN SOLUTIONS was incorporated in the year 2012; we were the esteemed partners of NGS Learning. We are involved in Training students and working professionals in Hardware and software Embedded and software testing soft skills and Business English with certification and placement assistance.
+Now we have moved on and we started our own Brand NEXGEN SOLUTIONS [NGS] which is involved in software development and deployment. We also provide quality trained people to various MNCs and have a lot of requirement of job opportunities for the freshers, in continuation to that we are now looking forward to source the talent from the colleges, we get in to MOU with the college and provide practical oriented training for the students.
+We also provide internship for deserving candidates. We shortlist the students based on the free online exam that we conduct at your college. Would request you to give us a mutually convenient date so that we can conduct the exam at the earliest
+We provide placement assistance for all our students; our placement partners are NGS Tech who conduct regular placement drive at our office on all Saturdays for their Madurai and Chennai location,
+</h2></p> 
+<p STYLE="color:red; font-size:20px; text-align:left; font-family:Times new roman"> <b>We wish to associate with your college in the following areas </b>
+ <br>
+ <p style ="color:blue;font-size:20px; text-align:left; font-family:Times new roman"><b>
+1.  Industrial relations<br>
+<br>
+2.  Enhancing the quality of technical education<br>
+<br>
+3.  Formation of academic board <br>
+<br>
+4.  Need based training, to reduce the training period and cost of company<br>
+<br>
+5.  Intern-ship for students followed placement if satisfied<br>
+<br>
+6.  Research Projects<br>
+<br>	
+7.  Memorandum of Understanding<br>
+<br>
+8.  Performance based placement<br>
+<br> 
+9.  Faculty training program<br>
+<br>
+10. Guest lecturing and seminars<br>
+<br>
+</p></p></p>
+<P><p STYLE="color:red; font-size:20px; text-align:left; font-family:Times new roman"> <b>Advantages of NGS Training: (For Colleges)</b></p><br>
+<p style ="color:blue; font-size:20px; text-align:left; font-family:Times new roman">
+- Utilization of existing Infrastructure<br>
+<br>
+- Attracting talented student pool<br>
+<br>
+- Attracting major IT companies for campus recruitment<br>
+<br>
+- Placement Assistance <br>
+<br>
+</p></p></p>
+<p STYLE="color:red; font-size:20px; text-align:left; font-family:Times new roman"> <b>Advantages of NGS Training :( For Students)</b></p><br>
+<p style ="color:blue; font-size:20px; text-align:left; font-family:Times new roman">
+- Create Value add to existing portfolio<br>
+<br>
+- Increase career prospects & opportunities<br>
+<br>
+- Internship certification for student<br>
+<br></p></b>
+</p></P>
+</div>
+
+</body>
+</html>

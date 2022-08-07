@@ -1,0 +1,106 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  font-size: 28px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color:red;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="images/elon musk1.jpeg" style="width:1500px;height:300px;align:right;"/>
+ <style>
+        #clock {
+            font-size: 25px;
+            text-align:center;
+        }
+    </style>
+	<div id="clock">8:10:45</div>
+    <script>
+        setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            am_pm = "AM";
+  
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+  
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+  
+            let currentTime = hour + ":" 
+                + min + ":" + sec + am_pm;
+  
+            document.getElementById("clock")
+                .innerHTML = currentTime;
+        }
+  
+        showTime();
+    </script> 
+</div>
+
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="courses.html">Courses</a></li>
+  <li><a class="active" href="payment.html">Payment</a></li>
+  <li><a href="https://g.page/nexgen-solutions-gandhi-puram?share">Map</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+
+<b><p STYLE="color:black; font-size:25px; text-align:center; font-family:Times new roman">PAYMENT CAN BE MADE THROUGH</p>
+<p align= "center"><img src="images/gpay.jpg" style="width:205px;height:110px; align:center;"/></p><br>
+<br>
+<br>
+<br>
+<b><p STYLE="color:black; font-size:25px; text-align:center; font-family:Times new roman">SCAN THE QR CODE TO PAY</p>
+<p align= "center"><img src="images/qr.jpeg" style="width:400px;height:400px;"/></p><br>
+<br>
+<br></b>
+</body>
+</html>
